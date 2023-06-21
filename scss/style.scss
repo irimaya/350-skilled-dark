@@ -1,24 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
-$main-color: #14183c;
-$secondary-color: #ff5e34;
-$third-color: #ff28a4;
-$fourth-color: #8744d2;
-$fifth-color: #252848;
-$font-stack: 'Rubik', sans-serif;
-
 // Reset
 * {
-	box-sizing: border-box;
-	margin: 0;
 	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
-// Main Styling
 html,
 body {
-	font-family: $font-stack;
-	background: $main-color;
+	font-family: 'Rubik', sans-serif;
+	background: #14183c;
 	color: #fff;
 }
 
@@ -70,20 +62,22 @@ a {
 .display-1 {
 	font-size: 3rem;
 }
+
 .display-2 {
 	font-size: 2rem;
 }
 
 .bk-dark {
-	background: $fifth-color;
+	background: #252848;
 }
-
+.bk-dark {
+	background: #252848;
+}
+.bk-dark {
+	background: #252848;
+}
 .bk-gradient {
-	background-image: linear-gradient($secondary-color, $third-color);
-}
-
-.bk-gradient-2 {
-	background-image: linear-gradient(#fff, $fifth-color);
+	background-image: linear-gradient(#ff5e34, #ff28a4);
 }
 
 .btn {
@@ -97,17 +91,16 @@ a {
 }
 
 .btn-dark {
-	background: $fifth-color;
+	background: #252848;
 	color: #fff;
 }
-
 .btn-light {
-	background-image: linear-gradient($secondary-color, $third-color);
+	background-image: linear-gradient(#ff5e34, #ff28a4);
 	color: #fff;
 }
 
 .btn-light-secondary {
-	background-image: linear-gradient($fourth-color, $third-color);
+	background-image: linear-gradient(#8744d2, #ff28a4);
 	color: #fff;
 }
 
@@ -127,14 +120,14 @@ a {
 	flex: 1;
 }
 
-// MainHeader
+// Mainheader
 .mainheader {
 	.navbar {
 		padding: 30px 0;
 		.flex-fixed {
 			justify-content: space-between;
 		}
-	} //End .navbar
+	} //End .showcase
 	.showcase {
 		padding: 80px 0;
 		.flex {
@@ -145,7 +138,7 @@ a {
 				font-weight: 200;
 			}
 		}
-	} ///End .showcase
+	}
 } //End .mainheader
 
 // Skilled
@@ -154,26 +147,25 @@ a {
 	.flex {
 		gap: 50px;
 		margin-bottom: 70px;
-	}
-	.flex-box {
-		// padding: 0 20px 40px 20px;
-		padding: 40px 20px;
-		border-radius: 20px;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		img {
-			padding: 15px;
-			border-radius: 50%;
-			margin-top: -90px;
-			margin-bottom: 20px;
+		&-box {
+			padding: 40px 20px;
+			border-radius: 20px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			img {
+				padding: 15px;
+				border-radius: 50%;
+				margin-top: -90px;
+				margin-bottom: 20px;
+			}
+			p {
+				padding-top: 10px;
+				padding-bottom: 20px;
+			}
+			a {
+				color: #ff28a4;
+			}
 		}
-		p {
-			padding-top: 10px;
-			padding-bottom: 20px;
-		}
-		a {
-			color: $third-color;
-		}
-	} //End .flex-box
+	} //End .flex
 } //End .skilled
 
 // Footer
@@ -183,18 +175,13 @@ a {
 	.flex-fixed {
 		justify-content: space-between;
 	}
-	.logo {
-		color: #fff;
-	}
 }
 
 @media (max-width: 768px) {
-	// Utility Classes
 	.flex {
 		flex-direction: column;
 	}
 
-	// MainHeader
 	.mainheader {
 		.showcase {
 			padding: 50px 0;
@@ -202,11 +189,10 @@ a {
 				gap: 20px;
 				align-items: center;
 			}
-		} ///End .showcase
-	} //End .mainheader
+		}
+	}
 
-	// Skilled
 	.skilled {
 		padding: 40px 0;
-	} //End .skilled
+	}
 }
